@@ -23,7 +23,7 @@ export default function Home() {
 
           <hr className="md:h-4/5 md:w-0 w-full border border-gray-200 mb-8"></hr>
 
-          <div className="">
+          <div>
             <Link href="/about">
               <a>
                 <p className="text-lg font-light mb-8">about me</p>
