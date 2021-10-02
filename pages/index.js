@@ -30,7 +30,12 @@ export default function Home() {
               </a>
             </Link>
 
-            <p className="text-lg font-light mb-8">projects</p>
+            <Link href="/projects">
+              <a>
+                <p className="text-lg font-light mb-8">projects</p>
+              </a>
+            </Link>
+
             <p className="text-lg font-light mb-8">commentary</p>
           </div>
         </div>
