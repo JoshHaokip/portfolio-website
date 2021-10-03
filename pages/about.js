@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import skillsList from "../utils/skillsList.js";
+import Image from "next/image";
 
 export default function about() {
   return (
@@ -109,7 +111,7 @@ export default function about() {
               </p>
             </div>
 
-            <div className="mb-12">
+            <div className="mb-16">
               <p className="text-sm mb-3 font-semibold md:text-lg">
                 University of York
               </p>
@@ -123,9 +125,55 @@ export default function about() {
           </div>
         </div>
 
+        <div className="mt-16">
+          <h3 className="mb-10 font-semibold md:font-bold md:text-2xl">
+            Skills
+          </h3>
+
+          <div className="mb-10">
+            <p className="text-sm mb-3 font-semibold md:text-lg">Marketing</p>
+
+            <div className="flex flex-row flex-wrap">
+              {skillsList
+                .filter((skill) => skill.category === "marketing")
+                .map((skills) => (
+                  <div className="pr-6 pt-4 md:pr-10">
+                    <Image
+                      key={skills.id}
+                      src={skills.img}
+                      height={25}
+                      width={25}
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <p className="text-sm mb-3 font-semibold md:text-lg">
+              Web Devoplment
+            </p>
+
+            <div className="flex flex-row flex-wrap">
+              {skillsList
+                .filter((skill) => skill.category === "dev")
+                .map((skills) => (
+                  <div className="pr-6 pt-4 md:pr-10">
+                    <Image
+                      key={skills.id}
+                      src={skills.img}
+                      height={25}
+                      width={25}
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
+
         <div className="mb-12">
           <Link href="/">
-            <a>Back to home</a>
+            <a>Back home</a>
           </Link>
         </div>
       </main>
