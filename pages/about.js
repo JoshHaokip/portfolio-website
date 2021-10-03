@@ -16,7 +16,7 @@ export default function about() {
       </Head>
       <main className="mx-8 max-h-full md:px-40 px-4 pt-16 md:mx-24">
         <div className="mb-12">
-          <h1 className="text-4xl font-medium mb-2 md:text-6xl">josh haokip</h1>
+          <h1 className="text-4xl font-bold mb-2 md:text-6xl">josh haokip</h1>
           <p className="text-xs md:text-lg font-light">
             marketer. developer. designer
           </p>

@@ -34,7 +34,7 @@ export default function Projects({ joshProjects }) {
 
       <main className="mx-8 max-h-full md:px-40 px-4 pt-16 md:mx-24">
         <div className="mb-20">
-          <h1 className="text-6xl font-medium mb-2 md:text-6xl">projects</h1>
+          <h1 className="text-6xl font-bold mb-2 md:text-6xl">projects</h1>
           <p className="text-base md:text-lg font-light">code. design. ideas</p>
         </div>
 
