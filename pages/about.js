@@ -62,38 +62,6 @@ export default function about() {
             </p>
           </div>
 
-          <div className="mb-16">
-            <p className="text-sm mb-3 font-semibold md:text-lg">
-              The Idle Man
-            </p>
-            <p className="text-xs mb-3 font-light md:text-base">
-              Mar 2017 - Nov 2017
-            </p>
-            <p className="text-xs mb-3 font-light md:text-base">
-              Partnership Marketing
-            </p>
-
-            <p className="text-xs mb-2 font-light text-justify leading-6 text-gray-600 md:leading-8	md:text-base">
-              I worked as the Partnerships Manager focusing on improving our
-              marketing targets by implementing our global outreach strategy.
-            </p>
-          </div>
-
-          <div className="mb-16">
-            <p className="text-sm mb-3 font-semibold md:text-lg">Pouch</p>
-            <p className="text-xs mb-3 font-light md:text-base">
-              Nov 2016 - Jan 2017
-            </p>
-            <p className="text-xs mb-3 font-light md:text-base">
-              Marketing Intern
-            </p>
-
-            <p className="text-xs mb-2 font-light text-justify leading-6 text-gray-600	md:leading-8	md:text-base">
-              Managed to get Pouch featured on the Metro Online, resulting in 4x
-              users in one week
-            </p>
-          </div>
-
           <div className="mt-16">
             <h3 className="mb-10 font-semibold md:font-bold md:text-2xl">
               Education
