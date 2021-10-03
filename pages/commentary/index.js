@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { createClient } from "contentful";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -40,16 +41,22 @@ export default function about({ joshBlog }) {
         <div className="mt-10">
           {joshBlog.map((article) => (
             <div className="mt-12" key={article.sys.id}>
-              <div className="mt-6 md:mt-20">
+              <div className="mt-6 md:mt-16">
                 <p className="font-light text-sm text-gray-600 pb-2 md:font-normal md:text-base">
                   {article.fields.date}
                 </p>
                 <h1 className="text-sm font-semibold pb-2 leading-7 md:text-lg md:pb-2">
                   {article.fields.title}
                 </h1>
-                <p className="font-light text-xs text-gray-600 leading-6 text-justify md:text-base md:leading-7">
+                <p className="font-light text-xs text-gray-600 leading-6 pb-3 text-justify md:text-xs md:leading-7">
                   {article.fields.description}
                 </p>
+                <Link href={"/commentary/" + article.fields.slug}>
+                  <a className="text-gray-900 text-sm flex flex-row items-center">
+                    <p className="pr-2">read more</p>
+                    <HiArrowNarrowRight />
+                  </a>
+                </Link>
               </div>
             </div>
           ))}

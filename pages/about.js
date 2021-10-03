@@ -102,7 +102,7 @@ export default function about() {
           </h3>
 
           <div className="mb-10">
-            <p className="text-sm mb-2 font-semibold md:text-lg">Marketing</p>
+            <p className="text-sm mb-2 font-medium md:text-base">Marketing</p>
 
             <div className="flex flex-row flex-wrap">
               {skillsList
@@ -121,7 +121,7 @@ export default function about() {
           </div>
 
           <div className="mb-10">
-            <p className="text-sm mb-2 font-semibold md:text-lg">
+            <p className="text-sm mb-2 font-medium md:text-base">
               Web Devoplment
             </p>
 
@@ -142,7 +142,7 @@ export default function about() {
           </div>
 
           <div className="mb-10">
-            <p className="text-sm mb-2 font-semibold md:text-lg">Design</p>
+            <p className="text-sm mb-2 font-medium md:text-base">Design</p>
 
             <div className="flex flex-row flex-wrap">
               {skillsList
