@@ -4,6 +4,7 @@ import linkedin from "../logos/linkedin.png";
 import salesforce from "../logos/salesforce.png";
 import sheets from "../logos/sheets.png";
 import zapier from "../logos/zapier.png";
+
 import html from "../logos/html.png";
 import css from "../logos/css.png";
 import javascript from "../logos/javascript.png";
@@ -13,6 +14,15 @@ import contentful from "../logos/contentful.png";
 import styledcomponents from "../logos/styled-components.png";
 import sass from "../logos/sass.png";
 import bootstrap from "../logos/bootstrap.png";
+import git from "../logos/git.png";
+
+import photoshop from "../logos/photoshop.png";
+import indesign from "../logos/indesign.png";
+import sketch from "../logos/sketch.png";
+import figma from "../logos/figma.png";
+import photo from "../logos/photo.png";
+import designer from "../logos/designer.jpg";
+import ux from "../logos/ux.png";
 
 const skillsList = [
   {
@@ -64,9 +74,93 @@ const skillsList = [
     category: "dev",
   },
   {
-    id: 9,
+    id: 10,
     title: "JavaScript",
     img: javascript,
+    category: "dev",
+  },
+  {
+    id: 11,
+    title: "tailwind",
+    img: tailwind,
+    category: "dev",
+  },
+  {
+    id: 12,
+    title: "react",
+    img: react,
+    category: "dev",
+  },
+  {
+    id: 13,
+    title: "contentful",
+    img: contentful,
+    category: "dev",
+  },
+  {
+    id: 14,
+    title: "styled-components",
+    img: styledcomponents,
+    category: "dev",
+  },
+  {
+    id: 15,
+    title: "sass",
+    img: sass,
+    category: "dev",
+  },
+  {
+    id: 16,
+    title: "bootstrap",
+    img: bootstrap,
+    category: "dev",
+  },
+  {
+    id: 17,
+    title: "Photoshop",
+    img: photoshop,
+    category: "design",
+  },
+  {
+    id: 18,
+    title: "Indesign",
+    img: indesign,
+    category: "design",
+  },
+  {
+    id: 19,
+    title: "Sketch",
+    img: sketch,
+    category: "design",
+  },
+  {
+    id: 20,
+    title: "Figma",
+    img: figma,
+    category: "design",
+  },
+  {
+    id: 21,
+    title: "Photo",
+    img: photo,
+    category: "design",
+  },
+  {
+    id: 22,
+    title: "Designer",
+    img: designer,
+    category: "design",
+  },
+  {
+    id: 23,
+    title: "UX",
+    img: ux,
+    category: "design",
+  },
+  {
+    id: 24,
+    title: "Git",
+    img: git,
     category: "dev",
   },
 ];

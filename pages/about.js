@@ -131,26 +131,26 @@ export default function about() {
           </h3>
 
           <div className="mb-10">
-            <p className="text-sm mb-3 font-semibold md:text-lg">Marketing</p>
+            <p className="text-sm mb-2 font-semibold md:text-lg">Marketing</p>
 
             <div className="flex flex-row flex-wrap">
               {skillsList
                 .filter((skill) => skill.category === "marketing")
                 .map((skills) => (
-                  <div className="pr-6 pt-4 md:pr-10">
+                  <div className="pr-6 pt-8 md:pr-10">
                     <Image
                       key={skills.id}
                       src={skills.img}
-                      height={25}
-                      width={25}
+                      height={35}
+                      width={35}
                     />
                   </div>
                 ))}
             </div>
           </div>
 
-          <div className="mb-16">
-            <p className="text-sm mb-3 font-semibold md:text-lg">
+          <div className="mb-10">
+            <p className="text-sm mb-2 font-semibold md:text-lg">
               Web Devoplment
             </p>
 
@@ -158,12 +158,31 @@ export default function about() {
               {skillsList
                 .filter((skill) => skill.category === "dev")
                 .map((skills) => (
-                  <div className="pr-6 pt-4 md:pr-10">
+                  <div className="pr-6 pt-8 md:pr-10">
                     <Image
                       key={skills.id}
                       src={skills.img}
-                      height={25}
-                      width={25}
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <p className="text-sm mb-2 font-semibold md:text-lg">Design</p>
+
+            <div className="flex flex-row flex-wrap">
+              {skillsList
+                .filter((skill) => skill.category === "design")
+                .map((skills) => (
+                  <div className="pr-6 pt-8 md:pr-10">
+                    <Image
+                      key={skills.id}
+                      src={skills.img}
+                      height={35}
+                      width={35}
                     />
                   </div>
                 ))}
