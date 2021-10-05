@@ -28,6 +28,7 @@ export async function getStaticProps({ params }) {
     props: {
       joshBlog: res.items,
     },
+    revalidate: 30,
   };
 }
 
