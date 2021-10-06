@@ -45,6 +45,8 @@ const renderOptions = {
 };
 
 export default function Article({ joshBlog }) {
+  if (!joshBlog) return <div>404</div>;
+
   return (
     <div>
       <Head>
