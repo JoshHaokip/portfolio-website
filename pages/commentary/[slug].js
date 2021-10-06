@@ -2,6 +2,7 @@ import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 import Head from "next/head";
+import Link from "next/link";
 
 const client = createClient({
   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
@@ -70,6 +71,12 @@ export default function Article({ joshBlog }) {
 
         <div className="prose max-w-none mt-10 text-base leading-loose md:text-base md:font-normal md:leading-10 ">
           {documentToReactComponents(joshBlog.fields.content, renderOptions)}
+        </div>
+
+        <div className="mt-12 mb-12">
+          <Link href="/commentary">
+            <a>Back to commentary</a>
+          </Link>
         </div>
       </main>
     </div>

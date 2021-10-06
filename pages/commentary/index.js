@@ -45,10 +45,10 @@ export default function about({ joshBlog }) {
                 <p className="font-light text-base text-gray-600 pb-2 md:font-normal md:text-base">
                   {article.fields.date}
                 </p>
-                <h1 className="text-lg font-semibold pb-2 leading-7 md:text-lg md:pb-2">
+                <h1 className="text-lg font-semibold pb-2 leading-7 md:font-bold md:text-lg md:pb-2">
                   {article.fields.title}
                 </h1>
-                <p className="font-normal text-base text-gray-400 leading-8 pb-3 md:text-xs md:leading-7">
+                <p className="font-normal text-base text-gray-500 leading-8 pb-3 md:font-normal md:text-base md:leading-8">
                   {article.fields.description}
                 </p>
                 <Link href={"/commentary/" + article.fields.slug}>

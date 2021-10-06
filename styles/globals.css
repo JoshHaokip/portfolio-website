@@ -5,6 +5,8 @@
 @layer base {
   body {
     letter-spacing: 2px;
+    background-color: #fdfdfd;
+    color: #111;
   }
 }
 
