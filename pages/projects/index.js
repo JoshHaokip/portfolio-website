@@ -40,12 +40,12 @@ export default function Projects({ joshProjects }) {
 
         <div className="mt-10">
           {joshProjects.map((project) => (
-            <div key={project.sys.id}>
+            <div key={project.fields.id}>
               <div className="mb-14 flex flex-col md:flex-row">
                 <Image
                   src={"https:" + project.fields.img.fields.file.url}
                   width={350}
-                  height={250}
+                  height={275}
                 />
 
                 <div className="mt-6 md:w-3/4 md:px-10">
@@ -58,10 +58,14 @@ export default function Projects({ joshProjects }) {
 
                   <div className="flex flex-row mt-2 justify-start">
                     <a href={project.fields.github} target="_blank">
-                      <p className="text-xs mt-2 pr-4">Github</p>
+                      <p className="flex justify-center items-center text-xs mt-2 mr-4 font-bold h-8 w-20 rounded-xl border-gray-700 border hover:bg-gray-900 hover:text-gray-50">
+                        Github
+                      </p>
                     </a>
                     <a href={project.fields.url} target="_blank">
-                      <p className="text-xs mt-2">Website</p>
+                      <p className="flex justify-center items-center text-xs mt-2 font-bold h-8 w-20 rounded-xl border-gray-700 border hover:bg-gray-900 hover:text-gray-50	">
+                        Website
+                      </p>
                     </a>
                   </div>
 
@@ -69,7 +73,7 @@ export default function Projects({ joshProjects }) {
                     {project.metadata.tags.map((tag) => (
                       <div
                         className="text-xs pr-4 font-light"
-                        key={project.sys.id}
+                        key={project.fields.id}
                       >
                         {tag.sys.id}
                       </div>

@@ -59,7 +59,7 @@ export default function Article({ joshBlog }) {
         <h1 className="text-3xl font-black pb-2 leading-10 mb-2 md:leading-relaxed md:text-5xl md:mb-4">
           {joshBlog.fields.title}
         </h1>
-        <p className="mb-4 text-sm text-gray-600 font-light md:mb-10 md:text-base">
+        <p className="mb-4 text-sm text-gray-600 font-light md:mb-6 md:text-base">
           {" "}
           Published: {joshBlog.fields.date}
         </p>
