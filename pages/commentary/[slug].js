@@ -1,9 +1,7 @@
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { MARKS } from "@contentful/rich-text-types";
 
 import Head from "next/head";
-import Link from "next/link";
 
 const client = createClient({
   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
@@ -65,7 +63,7 @@ export default function Article({ joshBlog }) {
 
         <hr className="mt-4"></hr>
 
-        <div className="prose max-w-none mt-10 text-xs text-justify text-gray-600 leading-8 md:text-lg md:leading-10">
+        <div className="prose max-w-none mt-10 text-xs text-justify text-gray-600 leading-8 md:text-sm md:font-normal md:leading-10">
           {documentToReactComponents(joshBlog.fields.content, renderOptions)}
         </div>
       </main>
