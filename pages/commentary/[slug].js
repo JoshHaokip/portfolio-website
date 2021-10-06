@@ -54,18 +54,21 @@ export default function Article({ joshBlog }) {
         <meta name="description" content={joshBlog.fields.description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-8 h-full md:px-40 px-4 pt-16 md:mx-24">
-        <h1 className="text-2xl font-black pb-2 leading-9 mb-2 md:leading-relaxed md:text-4xl md:mb-4">
+      <main className="mx-2 h-full md:px-40 px-4 pt-16 md:mx-24">
+        <h1 className="text-3xl font-black pb-2 leading-10 mb-2 md:leading-relaxed md:text-5xl md:mb-4">
           {joshBlog.fields.title}
         </h1>
-        <p className="mb-4 text-xs text-gray-600 font-light md:mb-10">
+        <p className="mb-4 text-sm text-gray-600 font-light md:mb-10 md:text-base">
           {" "}
           Published: {joshBlog.fields.date}
         </p>
 
-        <hr className="mt-4"></hr>
+        <p className="mb-4 text-sm text-gray-600 font-light md:mb-10 md:text-base">
+          {" "}
+          Read Time: 5mins
+        </p>
 
-        <div className="prose max-w-none mt-10 text-xs text-justify text-gray-600 leading-8 md:text-sm md:font-normal md:leading-10">
+        <div className="prose max-w-none mt-10 text-base leading-loose md:text-base md:font-normal md:leading-10 ">
           {documentToReactComponents(joshBlog.fields.content, renderOptions)}
         </div>
       </main>

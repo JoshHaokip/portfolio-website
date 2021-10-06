@@ -30,9 +30,9 @@ export default function about({ joshBlog }) {
         <meta name="description" content="Here are my thoughts" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-8 max-h-full md:px-40 px-4 pt-16 md:mx-24">
+      <main className="mx-2 max-h-full md:px-40 px-4 pt-16 md:mx-24">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-2 md:text-6xl">commentary</h1>
+          <h1 className="text-5xl font-bold mb-2 md:text-6xl">commentary</h1>
           <p className="text-sm md:text-lg font-light">
             thoughts, learnings and opinions
           </p>
@@ -42,13 +42,13 @@ export default function about({ joshBlog }) {
           {joshBlog.map((article) => (
             <div className="mt-12" key={article.sys.id}>
               <div className="mt-6 md:mt-16">
-                <p className="font-light text-sm text-gray-600 pb-2 md:font-normal md:text-base">
+                <p className="font-light text-base text-gray-600 pb-2 md:font-normal md:text-base">
                   {article.fields.date}
                 </p>
-                <h1 className="text-sm font-semibold pb-2 leading-7 md:text-lg md:pb-2">
+                <h1 className="text-lg font-semibold pb-2 leading-7 md:text-lg md:pb-2">
                   {article.fields.title}
                 </h1>
-                <p className="font-light text-xs text-gray-600 leading-6 pb-3 text-justify md:text-xs md:leading-7">
+                <p className="font-normal text-base text-gray-400 leading-8 pb-3 md:text-xs md:leading-7">
                   {article.fields.description}
                 </p>
                 <Link href={"/commentary/" + article.fields.slug}>
