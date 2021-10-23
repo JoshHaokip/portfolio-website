@@ -59,17 +59,17 @@ export default function Article({ joshBlog }) {
         <h1 className="text-3xl font-black pb-2 leading-10 mb-2 md:leading-relaxed md:text-5xl md:mb-4">
           {joshBlog.fields.title}
         </h1>
-        <p className="mb-4 text-sm text-gray-600 font-light md:mb-6 md:text-base">
+        <p className="mb-4 text-sm text-gray-600 font-normal md:mb-6 md:text-base">
           {" "}
           Published: {joshBlog.fields.date}
         </p>
 
-        <p className="mb-4 text-sm text-gray-600 font-light md:mb-10 md:text-base">
+        <p className="mb-4 text-sm text-gray-600 font-normal md:mb-10 md:text-base">
           {" "}
           Read Time: {joshBlog.fields.readtime}mins
         </p>
 
-        <div className="prose max-w-none mt-10 text-base leading-loose md:text-base md:font-normal md:leading-10 ">
+        <div className="prose max-w-none mt-10 text-base font-light leading-loose md:text-lg md:font-light md:leading-10 md:tracking-wider">
           {documentToReactComponents(joshBlog.fields.content, renderOptions)}
         </div>
 
