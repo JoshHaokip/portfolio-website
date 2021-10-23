@@ -15,6 +15,7 @@ import styledcomponents from "../logos/styled-components.png";
 import sass from "../logos/sass.png";
 import bootstrap from "../logos/bootstrap.png";
 import git from "../logos/git.png";
+import next from "../logos/next-js.svg";
 
 import photoshop from "../logos/photoshop.png";
 import indesign from "../logos/indesign.png";
@@ -161,6 +162,12 @@ const skillsList = [
     id: 24,
     title: "Git",
     img: git,
+    category: "dev",
+  },
+  {
+    id: 25,
+    title: "NextJS",
+    img: next,
     category: "dev",
   },
 ];

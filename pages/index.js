@@ -36,7 +36,11 @@ export default function Home() {
               </a>
             </Link>
 
-            <p className="text-lg font-light mb-8">commentary</p>
+            <Link href="/commentary">
+              <a>
+                <p className="text-lg font-light mb-8">commentary</p>
+              </a>
+            </Link>
           </div>
         </div>
       </main>

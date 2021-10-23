@@ -66,7 +66,7 @@ export default function Article({ joshBlog }) {
 
         <p className="mb-4 text-sm text-gray-600 font-light md:mb-10 md:text-base">
           {" "}
-          Read Time: 5mins
+          Read Time: {joshBlog.fields.readtime}mins
         </p>
 
         <div className="prose max-w-none mt-10 text-base leading-loose md:text-base md:font-normal md:leading-10 ">
