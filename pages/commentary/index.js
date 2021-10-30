@@ -38,17 +38,17 @@ export default function about({ joshBlog }) {
           </p>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-12">
           {joshBlog.map((article) => (
             <div className="mt-12" key={article.sys.id}>
-              <div className="mt-6 md:mt-16">
-                <p className="font-light text-base text-gray-600 pb-2 md:font-normal md:text-base">
+              <div className="mt-10 md:mt-16">
+                <p className="font-light text-base text-gray-700 pb-2 md:font-light md:text-base">
                   {article.fields.date}
                 </p>
-                <h1 className="text-lg font-semibold pb-2 leading-7 md:font-bold md:text-lg md:pb-2">
+                <h1 className="text-lg font-semibold pb-2 text-gray-900 leading-7 md:font-bold md:text-lg md:pb-2">
                   {article.fields.title}
                 </h1>
-                <p className="font-normal text-base text-gray-500 leading-8 pb-3 md:font-normal md:text-base md:leading-8">
+                <p className="font-light text-base text-gray-700 leading-8 pb-3 md:font-light md:text-base md:leading-8">
                   {article.fields.description}
                 </p>
                 <Link href={"/commentary/" + article.fields.slug}>

@@ -69,7 +69,7 @@ export default function Article({ joshBlog }) {
           Read Time: {joshBlog.fields.readtime}mins
         </p>
 
-        <div className="prose max-w-none mt-10 text-base font-light leading-loose md:text-lg md:font-light md:leading-10 md:tracking-wider">
+        <div className="prose max-w-none mt-10 text-gray-800 text-base  leading-loose md:text-lg  md:leading-10 md:tracking-wider">
           {documentToReactComponents(joshBlog.fields.content, renderOptions)}
         </div>
 
