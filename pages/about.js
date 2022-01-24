@@ -9,7 +9,7 @@ export default function about() {
       <Head>
         <title>About Me</title>
         <meta
-          name="description"
+          name="Hi! I'm Josh - let's find out more about me."
           content="Hi! I'm Josh - let's find out more about me."
         />
         <link rel="icon" href="/favicon.ico" />

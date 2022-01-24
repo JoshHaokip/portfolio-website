@@ -26,7 +26,7 @@ export default function Projects({ joshProjects }) {
       <Head>
         <title>Projects </title>
         <meta
-          name="description"
+          name="Here are the projects I've been working on!"
           content="Here are the projects I've been working on!"
         />
         <link rel="icon" href="/favicon.ico" />

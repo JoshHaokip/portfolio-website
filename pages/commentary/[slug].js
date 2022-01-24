@@ -4,6 +4,8 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Head from "next/head";
 import Link from "next/link";
 
+import { ClapButton } from "@lyket/react";
+
 const client = createClient({
   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
   accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
@@ -48,11 +50,16 @@ const renderOptions = {
 export default function Article({ joshBlog }) {
   if (!joshBlog) return <div>404</div>;
 
+  console.log(joshBlog);
+
   return (
     <div>
       <Head>
         <title>{joshBlog.fields.title}</title>
-        <meta name="description" content={joshBlog.fields.description} />
+        <meta
+          name={joshBlog.fields.description}
+          content={joshBlog.fields.description}
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="mx-2 h-full md:px-40 px-4 pt-16 md:mx-24">
@@ -71,6 +78,10 @@ export default function Article({ joshBlog }) {
 
         <div className="prose max-w-none mt-10 text-gray-800 text-base  leading-loose md:text-lg  md:leading-10 md:tracking-wider">
           {documentToReactComponents(joshBlog.fields.content, renderOptions)}
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <ClapButton id={joshBlog.fields.slug} namespace="blogpost" />
         </div>
 
         <div className="mt-12 mb-12">

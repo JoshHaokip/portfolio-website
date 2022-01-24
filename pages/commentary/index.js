@@ -27,7 +27,10 @@ export default function about({ joshBlog }) {
     <div>
       <Head>
         <title>Commentary </title>
-        <meta name="description" content="Here are my thoughts" />
+        <meta
+          name="my thoughts, learnings and opinions"
+          content="Here are my thoughts"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="mx-2 max-h-full md:px-40 px-4 pt-16 md:mx-24">
